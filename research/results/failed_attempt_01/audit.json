@@ -1,0 +1,25 @@
+{
+  "raw_rows": 35717,
+  "zones": 30,
+  "exact_duplicate_excess": 216,
+  "duplicate_key_excess": 216,
+  "conflicting_keys": 0,
+  "invalid_occupancy_rows": 385,
+  "missing": {
+    "zone": 0,
+    "time": 0,
+    "capacity": 0,
+    "occupancy": 0
+  },
+  "start": "2016-10-04 07:46:28",
+  "end": "2016-12-19 16:30:35",
+  "clean_rows": 35116,
+  "clean_interval_minutes_quantiles": {
+    "0.0": 5.966666666666667,
+    "0.25": 26.983333333333334,
+    "0.5": 32.93333333333333,
+    "0.75": 33.06666666666667,
+    "0.95": 926.05,
+    "1.0": 13908.783333333333
+  }
+}

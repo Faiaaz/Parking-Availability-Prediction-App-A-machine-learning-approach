@@ -1,0 +1,265 @@
+{
+  "dataset": "UCI Parking Birmingham",
+  "n_train": 28525,
+  "n_test": 7132,
+  "train_start": "2016-10-04 08:25:42",
+  "train_end": "2016-12-05 09:29:08",
+  "test_start": "2016-12-05 09:29:08",
+  "test_end": "2016-12-19 16:30:35",
+  "label_definition": "available = 1 if occupancy/capacity < 0.85",
+  "split": "chronological hold-out (last 20%)",
+  "notes": "High short-horizon scores are expected because occupancy is persistent; compare against persistence_lag1 and calendar_only_* baselines.",
+  "classification": {
+    "logistic_regression": {
+      "model": "logistic_regression",
+      "task": "classification",
+      "accuracy": 0.9548513740886146,
+      "precision": 0.9985893140539588,
+      "recall": 0.9474652835870838,
+      "f1": 0.9723557692307693,
+      "roc_auc": 0.9964067163665624,
+      "average_precision": 0.9992989984653987,
+      "confusion_matrix": [
+        [
+          1147,
+          8
+        ],
+        [
+          314,
+          5663
+        ]
+      ],
+      "feature_set": "calendar+lags"
+    },
+    "random_forest": {
+      "model": "random_forest",
+      "task": "classification",
+      "accuracy": 0.9817722938867078,
+      "precision": 0.9924204143506822,
+      "recall": 0.9857788188054207,
+      "f1": 0.9890884673493369,
+      "roc_auc": 0.9974825575963271,
+      "average_precision": 0.9993570741312494,
+      "confusion_matrix": [
+        [
+          1110,
+          45
+        ],
+        [
+          85,
+          5892
+        ]
+      ],
+      "feature_set": "calendar+lags"
+    },
+    "hist_gradient_boosting": {
+      "model": "hist_gradient_boosting",
+      "task": "classification",
+      "accuracy": 0.9842961301177791,
+      "precision": 0.9904666332162569,
+      "recall": 0.990798059227037,
+      "f1": 0.990632318501171,
+      "roc_auc": 0.9977452529067051,
+      "average_precision": 0.9995543621444568,
+      "confusion_matrix": [
+        [
+          1098,
+          57
+        ],
+        [
+          55,
+          5922
+        ]
+      ],
+      "feature_set": "calendar+lags"
+    },
+    "linear_svm": {
+      "model": "linear_svm",
+      "task": "classification",
+      "accuracy": 0.9684520471116096,
+      "precision": 0.9968901174844506,
+      "recall": 0.9653672410908483,
+      "f1": 0.9808754781130472,
+      "roc_auc": 0.9964616165720399,
+      "average_precision": 0.9993031663645873,
+      "confusion_matrix": [
+        [
+          1137,
+          18
+        ],
+        [
+          207,
+          5770
+        ]
+      ],
+      "feature_set": "calendar+lags"
+    },
+    "calendar_only_logistic_regression": {
+      "model": "calendar_only_logistic_regression",
+      "task": "classification",
+      "accuracy": 0.7909422321929332,
+      "precision": 0.9921017990346643,
+      "recall": 0.7565668395516145,
+      "f1": 0.8584717607973422,
+      "roc_auc": 0.9347045347714579,
+      "average_precision": 0.9871983842557415,
+      "confusion_matrix": [
+        [
+          1119,
+          36
+        ],
+        [
+          1455,
+          4522
+        ]
+      ],
+      "feature_set": "calendar_only"
+    },
+    "calendar_only_random_forest": {
+      "model": "calendar_only_random_forest",
+      "task": "classification",
+      "accuracy": 0.9326977005047672,
+      "precision": 0.9850008823010411,
+      "recall": 0.93391333444872,
+      "f1": 0.9587770525592579,
+      "roc_auc": 0.9687924200054032,
+      "average_precision": 0.9924086109663888,
+      "confusion_matrix": [
+        [
+          1070,
+          85
+        ],
+        [
+          395,
+          5582
+        ]
+      ],
+      "feature_set": "calendar_only"
+    },
+    "calendar_only_hist_gradient_boosting": {
+      "model": "calendar_only_hist_gradient_boosting",
+      "task": "classification",
+      "accuracy": 0.9231632080762759,
+      "precision": 0.9731567021091163,
+      "recall": 0.934080642462774,
+      "f1": 0.9532183711797849,
+      "roc_auc": 0.967763439505116,
+      "average_precision": 0.9935053617188078,
+      "confusion_matrix": [
+        [
+          1001,
+          154
+        ],
+        [
+          394,
+          5583
+        ]
+      ],
+      "feature_set": "calendar_only"
+    },
+    "calendar_only_linear_svm": {
+      "model": "calendar_only_linear_svm",
+      "task": "classification",
+      "accuracy": 0.8541783510936624,
+      "precision": 0.9635680751173709,
+      "recall": 0.8584574201104233,
+      "f1": 0.9079808883383472,
+      "roc_auc": 0.9345424415526473,
+      "average_precision": 0.987149092340352,
+      "confusion_matrix": [
+        [
+          961,
+          194
+        ],
+        [
+          846,
+          5131
+        ]
+      ],
+      "feature_set": "calendar_only"
+    }
+  },
+  "regression": {
+    "ridge": {
+      "model": "ridge",
+      "task": "regression",
+      "mae": 0.045308624249691114,
+      "rmse": 0.07509172477604519,
+      "r2": 0.9241906323494203,
+      "feature_set": "calendar+lags"
+    },
+    "random_forest_reg": {
+      "model": "random_forest_reg",
+      "task": "regression",
+      "mae": 0.017042488936664928,
+      "rmse": 0.032745750299431095,
+      "r2": 0.9855838727789002,
+      "feature_set": "calendar+lags"
+    },
+    "hist_gradient_boosting_reg": {
+      "model": "hist_gradient_boosting_reg",
+      "task": "regression",
+      "mae": 0.016391496451657255,
+      "rmse": 0.030103658308434332,
+      "r2": 0.9878163541555293,
+      "feature_set": "calendar+lags"
+    },
+    "calendar_only_ridge": {
+      "model": "calendar_only_ridge",
+      "task": "regression",
+      "mae": 0.12328540229869207,
+      "rmse": 0.16358670334005482,
+      "r2": 0.6402219069952899,
+      "feature_set": "calendar_only"
+    },
+    "calendar_only_random_forest_reg": {
+      "model": "calendar_only_random_forest_reg",
+      "task": "regression",
+      "mae": 0.0614644701017563,
+      "rmse": 0.09436255098468464,
+      "r2": 0.880287896859119,
+      "feature_set": "calendar_only"
+    },
+    "calendar_only_hist_gradient_boosting_reg": {
+      "model": "calendar_only_hist_gradient_boosting_reg",
+      "task": "regression",
+      "mae": 0.058085334583183636,
+      "rmse": 0.08697951658620855,
+      "r2": 0.8982878829503677,
+      "feature_set": "calendar_only"
+    }
+  },
+  "baselines": {
+    "classification": {
+      "model": "persistence_lag1",
+      "task": "classification",
+      "accuracy": 0.9631239484015703,
+      "precision": 0.9779190364670458,
+      "recall": 0.9780826501589426,
+      "f1": 0.9780008364700962,
+      "roc_auc": 0.988666656526787,
+      "average_precision": 0.997781593695512,
+      "confusion_matrix": [
+        [
+          1023,
+          132
+        ],
+        [
+          131,
+          5846
+        ]
+      ]
+    },
+    "regression": {
+      "model": "persistence_lag1",
+      "task": "regression",
+      "mae": 0.05088606637633711,
+      "rmse": 0.09738512224120023,
+      "r2": 0.8724959610633765
+    }
+  },
+  "best_classifier": "hist_gradient_boosting",
+  "best_regressor": "hist_gradient_boosting_reg",
+  "best_calendar_only_classifier": "calendar_only_random_forest",
+  "best_calendar_only_regressor": "calendar_only_hist_gradient_boosting_reg"
+}

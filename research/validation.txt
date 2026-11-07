@@ -1,0 +1,16 @@
+test_duplicate_policy_and_invalid_values (test_research.ProtocolTests.test_duplicate_policy_and_invalid_values) ... ok
+test_elapsed_horizon_and_future_history (test_research.ProtocolTests.test_elapsed_horizon_and_future_history) ... ok
+test_no_match_across_long_gap (test_research.ProtocolTests.test_no_match_across_long_gap) ... ok
+test_paired_bootstrap_preserves_index_alignment (test_research.ProtocolTests.test_paired_bootstrap_preserves_index_alignment) ... ok
+test_purge_and_group_boundaries (test_research.ProtocolTests.test_purge_and_group_boundaries) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.132s
+
+OK
+Original artifact hashes and audit unchanged
+Refit reproduced 30-minute gradient_boosting holdout predictions within 1e-12 absolute / 1e-10 relative tolerance.
+Refit reproduced 60-minute random_forest holdout predictions within 1e-12 absolute / 1e-10 relative tolerance.
+Refit reproduced 120-minute random_forest holdout predictions within 1e-12 absolute / 1e-10 relative tolerance.
+Verified 236,012 saved predictions, all output and legacy hashes, identical model cohorts, recomputed metrics, and purged temporal boundaries.
+Verified 236,012 saved predictions, all output and legacy hashes, identical model cohorts, recomputed metrics, and purged temporal boundaries.
