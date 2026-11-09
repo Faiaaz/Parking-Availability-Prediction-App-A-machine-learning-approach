@@ -7,7 +7,7 @@ End-to-end ML app that predicts car-park availability from **real sensor occupan
 > `Occupancy / Capacity`. Evaluation uses a chronological hold-out so metrics reflect
 > genuine predictive skill, not shuffled noise.
 
-## What you can honestly claim
+## Project Highlights
 
 - Built a full ML application: data pipeline → feature engineering → multiple models → evaluation → interactive dashboard.
 - Trained classifiers and regressors on public Birmingham NCP occupancy data (~35k readings, 30 car parks).
