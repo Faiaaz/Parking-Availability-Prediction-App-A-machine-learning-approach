@@ -23,3 +23,15 @@ data/processed/*
 **/credentials*
 **/*password*
 **/secrets*
+
+# Private research correspondence
+research/dr_meng_progress_brief.md
+
+# Local reproduction output
+research/results/reliability_reproduction*/
+
+# External source downloads and private correspondence
+data/external/
+research/dr_meng_progress_brief_v2.md
+research/results/v2/birmingham_reproduction/
+research/results/v2/pilot/interval_predictions.csv.gz

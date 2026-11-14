@@ -1,0 +1,11 @@
+{
+  "seed": 42,
+  "test_seeds": [17,29],
+  "severity": 0.2,
+  "horizons": [30,60,120],
+  "tolerance_minutes": 5,
+  "birmingham_cuts": ["2016-11-29","2016-12-06","2016-12-13","2016-12-20"],
+  "harvard_sfpark_cuts": ["2013-07-04","2013-07-11","2013-07-18","2013-07-25"],
+  "calibration": "equal clean and five corrupted conditions; seed 53",
+  "model_iterations": 60
+}

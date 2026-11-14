@@ -1,0 +1,17 @@
+test_capacity_and_simulation_separation (test_multidata.AdapterTests.test_capacity_and_simulation_separation) ... ok
+test_partition_label_boundary (test_multidata.AdapterTests.test_partition_label_boundary) ... ok
+test_unknown_gap_and_conflict (test_multidata.AdapterTests.test_unknown_gap_and_conflict) ... ok
+test_calibration_and_score (test_reliability.ReliabilityTests.test_calibration_and_score) ... ok
+test_invalid_missing_and_age (test_reliability.ReliabilityTests.test_invalid_missing_and_age) ... ok
+test_partition_purge (test_reliability.ReliabilityTests.test_partition_purge) ... ok
+test_seed_and_causality (test_reliability.ReliabilityTests.test_seed_and_causality) ... ok
+test_duplicate_policy_and_invalid_values (test_research.ProtocolTests.test_duplicate_policy_and_invalid_values) ... ok
+test_elapsed_horizon_and_future_history (test_research.ProtocolTests.test_elapsed_horizon_and_future_history) ... ok
+test_no_match_across_long_gap (test_research.ProtocolTests.test_no_match_across_long_gap) ... ok
+test_paired_bootstrap_preserves_index_alignment (test_research.ProtocolTests.test_paired_bootstrap_preserves_index_alignment) ... ok
+test_purge_and_group_boundaries (test_research.ProtocolTests.test_purge_and_group_boundaries) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.259s
+
+OK

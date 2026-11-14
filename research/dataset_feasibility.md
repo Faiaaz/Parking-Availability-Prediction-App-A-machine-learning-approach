@@ -1,0 +1,14 @@
+# Dataset feasibility
+
+| Source and unit | Quality evidence and truth | Horizon decision and transfer test |
+|---|---|---|
+| Birmingham, irregular site count at second-resolution timestamp | Bounds and timestamp gaps observable. No hardware ID, heartbeat, arrival log, manual count or independent accuracy label. The valid measured ratio is a forecast reference. | GO for approximate 30/60/120 minutes, later-time testing and planned held-out parks. NO for real fault detection accuracy. |
+| Melbourne local snapshot, one status per bay, second-resolution status timestamps with offsets | Kerbside ID and update/status times support snapshot description. An old status may reflect an unchanged bay. A single observation cannot establish a missed transition. | NO for all three future targets. |
+| Melbourne historical sensor events, individual bay arrivals/departures | Event timestamps support occupancy reconstruction if bay identifiers, observation boundaries, reporting gaps and clock semantics can be resolved. Source status is a sensor reference. Absence of an event alone does not prove vacancy. Exact timestamp precision and ID continuity require file inspection. | CONDITIONAL for all horizons as bay classification or aggregate occupancy after defining monitored capacity. Evaluate within Melbourne before any cross-city comparison. |
+| SFpark hourly block aggregates, 2011–2013 | Block identifiers and occupied, vacant and unknown seconds support reporting completeness. Unknown time includes operational causes. Hourly occupancy is time-weighted; individual hardware error labels are unavailable in this table. Manual surveys would require a verified time/location join. | NO for 30 minutes from hourly aggregates. CONDITIONAL for subsequent 60/120-minute hourly intervals and held-out blocks. Define hour-end availability and valid-time denominator before evaluation. |
+
+Birmingham is distributed under CC BY 4.0 with UK OGL council provenance. [UCI record and dataset citation](https://doi.org/10.24432/C51K5Z)
+
+City of Melbourne publishes both products under CC BY 4.0. Only the snapshot was inspected locally. [Snapshot metadata](https://discover.data.vic.gov.au/en_AU/dataset/on-street-parking-bay-sensors) and [2018 historical metadata](https://discover.data.vic.gov.au/en_AU/dataset/on-street-car-parking-sensor-data-2018)
+
+SFMTA lists the hourly CSV at 1.38 GB. The guide documents unknown time and an outage in December 2012. Confirm the archive-specific reuse license before redistribution; the consulted guide does not establish it. Review a bounded sample before authorizing bulk transfer. [Official archive](https://www.sfmta.com/getting-around/drive-park/demand-responsive-pricing/sfpark-evaluation) and [sensor data guide](https://www.sfmta.com/sites/default/files/reports-and-documents/2018/08/sfpark_dataguide_parkingsensordata.pdf)

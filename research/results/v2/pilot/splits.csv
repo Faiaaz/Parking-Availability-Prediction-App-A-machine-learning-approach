@@ -1,0 +1,13 @@
+dataset,horizon,design,train,validation,calibration,held_site
+birmingham,30,future_date,139242,13560,17364,
+birmingham,30,held_site,133974,13056,16674,BHMBCCMKT01
+birmingham,60,future_date,106218,10500,13122,
+birmingham,60,held_site,102168,10104,12594,BHMBCCMKT01
+birmingham,120,future_date,92628,8814,10104,
+birmingham,120,held_site,89094,8478,9690,BHMBCCMKT01
+harvard_sfpark,30,future_date,188568,54162,54162,
+harvard_sfpark,30,held_site,155064,42990,42990,201021
+harvard_sfpark,60,future_date,186660,53514,53514,
+harvard_sfpark,60,held_site,153372,42414,42414,201021
+harvard_sfpark,120,future_date,182844,52218,52218,
+harvard_sfpark,120,held_site,149988,41262,41262,201021

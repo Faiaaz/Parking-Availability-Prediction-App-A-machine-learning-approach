@@ -1,0 +1,94 @@
+{
+  "config": {
+    "seed": 42,
+    "test_seeds": [
+      17,
+      29
+    ],
+    "severity": 0.2,
+    "horizons": [
+      30,
+      60,
+      120
+    ],
+    "tolerance_minutes": 5,
+    "birmingham_cuts": [
+      "2016-11-29",
+      "2016-12-06",
+      "2016-12-13",
+      "2016-12-20"
+    ],
+    "harvard_sfpark_cuts": [
+      "2013-07-04",
+      "2013-07-11",
+      "2013-07-18",
+      "2013-07-25"
+    ],
+    "calibration": "equal clean and five corrupted conditions; seed 53",
+    "model_iterations": 60
+  },
+  "audits": {
+    "birmingham": {
+      "raw_rows": 35717,
+      "zones": 30,
+      "exact_duplicate_excess": 216,
+      "duplicate_key_excess": 216,
+      "conflicting_keys": 0,
+      "invalid_occupancy_rows": 385,
+      "missing": {
+        "zone": 0,
+        "time": 0,
+        "capacity": 0,
+        "occupancy": 0
+      },
+      "start": "2016-10-04 07:46:28",
+      "end": "2016-12-19 16:30:35",
+      "clean_rows": 35116,
+      "clean_interval_minutes_quantiles": {
+        "0.0": 5.966666666666667,
+        "0.25": 26.983333333333334,
+        "0.5": 32.93333333333333,
+        "0.75": 33.06666666666667,
+        "0.95": 926.05,
+        "1.0": 13908.783333333333
+      }
+    },
+    "harvard_sfpark": {
+      "raw_rows": 65188,
+      "invalid_rows": 6122,
+      "raw_sites": 6,
+      "simulation_columns_excluded": [
+        "observed1",
+        "diff1",
+        "observed2",
+        "diff2",
+        "observed3",
+        "diff3",
+        "observed4",
+        "diff4",
+        "observed5",
+        "diff5",
+        "observed6",
+        "diff6",
+        "observed7",
+        "diff7",
+        "observed8",
+        "diff8",
+        "observed9",
+        "diff9",
+        "observed10",
+        "diff10"
+      ],
+      "timezone": "unspecified in downloaded PDF; naive local clock retained"
+    }
+  },
+  "inputs": {
+    "birmingham": "f1e28b9c697769a1a05cd20148241b60b1a73fee4907611163efc6fd9d12770a",
+    "harvard_sfpark": "c4f6e0393567150f6b40d409fa1bc8afb26354f7d9573e2d07a23f9622ea636e"
+  },
+  "code": {
+    "pilot.py": "56a3b217991f55722947800a1239214cebd01209bdfdbcb48085d0e37d9ac1f6",
+    "acquire.py": "6796155cfe4ead1613a978b6a3b5fa3cb8f405121cb9c1c778b80391330f03a0",
+    "adapters.py": "7423488a3ab7d502917524e11550fd8379d591b474bdd5e2220ed502bd0891d0"
+  }
+}

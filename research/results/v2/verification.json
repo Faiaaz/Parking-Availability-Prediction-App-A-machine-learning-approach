@@ -1,0 +1,25 @@
+{
+  "verification": "1188 score rows; forward targets; ordered intervals; identical M2 predictions across U0/U1/U2",
+  "prediction_rows": 1303401,
+  "hashes": {
+    "research/multidata/acquire.py": "6796155cfe4ead1613a978b6a3b5fa3cb8f405121cb9c1c778b80391330f03a0",
+    "research/multidata/adapters.py": "7423488a3ab7d502917524e11550fd8379d591b474bdd5e2220ed502bd0891d0",
+    "research/multidata/config.json": "b64fe135824c1b46b4020d8edfbba92262c8ae30e1194cc07c33e6c683d277e3",
+    "research/multidata/pilot.py": "56a3b217991f55722947800a1239214cebd01209bdfdbcb48085d0e37d9ac1f6",
+    "research/multidata/summarize.py": "d30f4561028ddf07e2d78d73d19e97aea40e19c98b5e153be617e0d024fcbacc"
+  },
+  "outputs": {
+    "summary.csv": "600e0e18a7a66092d72950690eb20aff13d6143b4fc65c69e60fec4a8171f57a",
+    "gate_validation.csv": "6c90b36ce9dded6af7c6eec6bb183f1d2e1850b0fd7ad724e0b105cddaca673b",
+    "splits.csv": "bee202b1e0b5e30226896f0ff6aeb9489f464f3ecf81b5588b898d13a6b787d7",
+    "coverage_width.pdf": "3f5c9cfbe8006cf908cdabc1eca4584f775dfc39a92db51cdeb7bd105db3ee53",
+    "paired_daily_intervals.csv": "1103301ceb954754675d966d1fb4fef7b515d129b084214b7d1fc17d8d529a21",
+    "coverage_width.png": "fb51bcbe8a9c6391be31fa952a7903a69ac9fd8e9f68f69622c86dba3101cb79",
+    "interval_predictions.csv.gz": "5bc2955d92edb56521a4d4a753bf8870fd37bf90a536f524b5102e59e14ea2da",
+    "execution.log": "5b7781550c5ee4b826888bd951cdab85d55cee2856669f65e8fbbc6e4a8c90b0",
+    "scores.csv": "b1207d9ea5368a32e62c1f3fd2ac83d1eb19fac54ce741fcb0e3efc3963d56ee",
+    "manifest.json": "1bf9559a8469a41558b359a78ba690e31b0aff73e6f1ac272d8df825459d8a6f",
+    "quality_detection.csv": "c564664ec7887b97622ce927f5776cbb76b4885645c0ddbe21b501584edb5cea",
+    "melbourne_sample_counts.csv": "72fe4d1b138a9ce31e5b33e3b42b7f1e89a58fb1fb58a20c87637115b877f7af"
+  }
+}

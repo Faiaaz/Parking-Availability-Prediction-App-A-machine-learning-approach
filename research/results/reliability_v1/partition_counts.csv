@@ -1,0 +1,4 @@
+horizon,training_unique,training_augmented,validation,calibration,test
+30,23207,139242,2260,2894,2907
+60,17703,106218,1750,2187,2244
+120,15438,92628,1469,1684,1886
