@@ -23,3 +23,9 @@ data/processed/*
 **/credentials*
 **/*password*
 **/secrets*
+
+# Private research correspondence
+research/dr_meng_progress_brief.md
+
+# Local reproduction output
+research/results/reliability_reproduction*/

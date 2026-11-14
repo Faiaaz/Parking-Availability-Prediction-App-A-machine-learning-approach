@@ -1,0 +1,7 @@
+# Interpretation limits
+
+The Birmingham reference comprises physically valid sensor reports. Plausible errors may remain. Invalid records are excluded before forecast matching, so this pilot estimates conditional performance where valid retrospective reference observations exist. Missed reporting opportunities and transmission delay cannot be reconstructed from this file. Replays assume observable source timestamps. Borrowing a prior reading mimics staleness but does not model out-of-order packet arrival.
+
+The clean calibration distribution differs from the degraded test inputs. Fixed residual radii pool sites with different occupancy and traffic patterns. Seven test days provide limited evidence about tails. The period overlaps previously inspected project results. Prior comparisons cannot make it a prospectively blinded evaluation. Site ID is an integer-coded training category treated numerically by the tree learner. No external test, held-out site experiment, or independent manual fault annotation has been completed.
+
+Injected events are assigned on valid observed rows. Four-reading blocks can cross overnight gaps. Scenario severity gives an assignment rate and clipping can reduce the magnitude of a plausible perturbation. AUROC measures detection of assignment. Distinct seeds and scenarios repeatedly use the same measured labels. No significance claim follows from the count of scenario rows.
