@@ -59,4 +59,16 @@ Legacy training regenerates reports and models. Original scores are historical r
 
 Birmingham data are credited to Daniel Stolfi, Parking Birmingham (2017), UCI Machine Learning Repository, [doi:10.24432/C51K5Z](https://doi.org/10.24432/C51K5Z). UCI distributes the data under CC BY 4.0 and cites UK Open Government Licence council provenance. Research preprocessing deduplicates rows and excludes invalid counts.
 
-The Melbourne snapshot is City of Melbourne data under [CC BY 4.0](https://discover.data.vic.gov.au/en_AU/dataset/on-street-parking-bay-sensors). Its identifiers refer to public parking bays. SFpark files are absent. A software license has not been selected for this repository; dataset licenses apply to their respective data.
+The Melbourne snapshot is City of Melbourne data under [CC BY 4.0](https://discover.data.vic.gov.au/en_AU/dataset/on-street-parking-bay-sensors). Its identifiers refer to public parking bays. Official SFMTA hourly files are absent; the Harvard SFpark sample used in v2 is described below. A software license has not been selected for this repository; dataset licenses apply to their respective data.
+
+## Bounded multi-dataset pilot v2
+
+A new exploratory pilot reproduced the original Birmingham scores and evaluated measured Harvard SFpark API records from a bounded six-segment prefix. Simulated taxi columns were excluded. A Melbourne historical prefix was inspected for event semantics only.
+
+On degraded future-date SFpark observations, M2 MAE was 5.02/6.53/8.33 percentage points at 30/60/120 minutes; fixed-gate M3 MAE was 6.37/7.61/9.09. A single held-out segment was evaluated separately. These results are city-specific refits on a convenience sample. V2 omits site ID and calibrates on a clean/degraded mixture, so its metrics use a different protocol from v1.
+
+Quality-conditioned U2 intervals had lower aggregate interval scores than U0/U1 in the future-date pilot, accompanied by coverage-width trade-offs and undercoverage. External replication, independent fault labels, representative site sampling and true cross-city transfer remain unresolved.
+
+See [v2 protocol](research/multi_dataset_protocol.md), [data provenance](research/data_provenance.md), [external audit](research/external_data_audit.md), [summary tables](research/results/v2/pilot/summary.csv) and [limitations](research/limitations_v2.md). Reproduce with the research.multidata.acquire, pilot and summarize modules. Raw downloads and the 31 MB interval-prediction archive are ignored by Git.
+
+The held-out SFpark segment exposes a failure case for U2: coverage was 81.6/70.9/62.6% at 30/60/120 minutes and interval scores were worse than U0 at every horizon. This limits any claim of generalized benefit from quality-conditioned calibration.

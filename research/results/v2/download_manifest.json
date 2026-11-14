@@ -1,0 +1,43 @@
+[
+  {
+    "file": "harvard_metadata.json",
+    "url": "https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/YLWCSU",
+    "bytes": 12982,
+    "range": null,
+    "sha256": "c5217c7fea609287db9448a22b28b049039631db250895aad62954cfa7e22e5a"
+  },
+  {
+    "file": "description.pdf",
+    "url": "https://dataverse.harvard.edu/api/access/datafile/3128637",
+    "bytes": 203763,
+    "range": null,
+    "sha256": "da32fa8c0e144db55eaea5c7532d08d284ef6d26d3b496e5a50fc7b9c8653786"
+  },
+  {
+    "file": "segments.tab",
+    "url": "https://dataverse.harvard.edu/api/access/datafile/3426356",
+    "bytes": 37701,
+    "range": null,
+    "sha256": "26cf430a1f7b217d6e531606fd7328e04897ac3d419a40f3145a24dd18aec922"
+  },
+  {
+    "file": "harvard_prefix.tab",
+    "url": "https://dataverse.harvard.edu/api/access/datafile/3128639",
+    "bytes": 4194304,
+    "range": "bytes=0-4194303",
+    "sha256": "c4f6e0393567150f6b40d409fa1bc8afb26354f7d9573e2d07a23f9622ea636e"
+  },
+  {
+    "file": "melbourne_prefix.zip",
+    "url": "https://opendatasoft-s3.s3.amazonaws.com/downloads/archive/7pgd-bdf2.zip",
+    "bytes": 2097152,
+    "range": "bytes=0-2097151",
+    "sha256": "2363885d79f0200b1b0d63095631bb3ea4ca21ac8a160739a6bed324f35be2cf"
+  },
+  {
+    "file": "melbourne_sample.csv",
+    "bytes": 1999843,
+    "sha256": "53acfe2dd5fa8b1654d7a0a47d91ca944f1b68d4c2d00eaf847582f3d91c6e34",
+    "derived_from": "melbourne_prefix.zip; bounded 2 MB deflate output"
+  }
+]
